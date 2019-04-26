@@ -1,0 +1,32 @@
+<idea-plugin>
+    <id>ru.newmcpe</id>
+    <name>VK Integration For Intellij</name>
+    <version>1.0</version>
+    <vendor email="chebakov05@gmail.com" url="https://vk.com/newmcpead">Newmcpe</vendor>
+    <description>Just VK Integration for IntellijJ IDEA or other IDEs</description>
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="ru.newmcpe.vkintegrationforintelij.ProjectChanged"/>
+    </extensions>
+
+    <actions>
+        <group id="VKIntegrationForIntelij.ActionsMenu" text="VK Integration For Intelij"
+               description="VK Integration For Intelij">
+            <add-to-group group-id="MainToolBar" anchor="last"/>
+            <add-to-group group-id="ViewMenu" anchor="last"/>
+            <action id="VKIntegrationForIntelij.ToggleIntegration" class="ru.newmcpe.vkintegrationforintelij.ToggleAction" text="Toggle Vk Integration"
+                    description="Toggles VK Integration for InteliJ"/>
+            <action id="VKIntegrationForIntelij.SetToken" class="ru.newmcpe.vkintegrationforintelij.TokenEnterAction" text="Enter VK Token"
+                    description="Enter VK Token for integration working"/>
+        </group>
+    </actions>
+
+
+    <application-components>
+        <component>
+            <implementation-class>ru.newmcpe.vkintegrationforintelij.StartupShutdown</implementation-class>
+        </component>
+    </application-components>
+</idea-plugin>
