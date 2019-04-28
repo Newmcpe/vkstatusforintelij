@@ -17,7 +17,7 @@ public class FileChanged implements FileEditorManagerListener {
         if (e.getNewFile() != null) {
             VirtualFile file = e.getNewFile();
             String version = ApplicationInfo.getInstance().getVersionName() + " " + ApplicationInfo.getInstance().getFullVersion();
-            version = version.replace(" ","+");
+            version = version.replace(" ", "+");
             StringBuilder status = new StringBuilder("Пишет код в Intelij IDEA. ");
             status
                     .append("Работает над " + e.getManager().getProject().getName() + ". ")

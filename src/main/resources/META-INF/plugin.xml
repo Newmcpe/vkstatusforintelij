@@ -16,9 +16,11 @@
                description="VK Integration For Intelij">
             <add-to-group group-id="MainToolBar" anchor="last"/>
             <add-to-group group-id="ViewMenu" anchor="last"/>
-            <action id="VKIntegrationForIntelij.ToggleIntegration" class="ru.newmcpe.vkintegrationforintelij.ToggleAction" text="Toggle Vk Integration"
+            <action id="VKIntegrationForIntelij.ToggleIntegration"
+                    class="ru.newmcpe.vkintegrationforintelij.ToggleAction" text="Toggle Vk Integration"
                     description="Toggles VK Integration for InteliJ"/>
-            <action id="VKIntegrationForIntelij.SetToken" class="ru.newmcpe.vkintegrationforintelij.TokenEnterAction" text="Enter VK Token"
+            <action id="VKIntegrationForIntelij.SetToken" class="ru.newmcpe.vkintegrationforintelij.TokenEnterAction"
+                    text="Enter VK Token"
                     description="Enter VK Token for integration working"/>
         </group>
     </actions>

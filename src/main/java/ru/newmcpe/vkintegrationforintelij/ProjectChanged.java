@@ -16,7 +16,7 @@ public class ProjectChanged implements StartupActivity {
     public void runActivity(@NotNull Project project) {
         FileChanged hook = new FileChanged();
         String version = ApplicationInfo.getInstance().getVersionName() + "+" + ApplicationInfo.getInstance().getFullVersion();
-        version = version.replace(" ","+");
+        version = version.replace(" ", "+");
         project.getMessageBus().connect().subscribe(FileEditorManagerListener.FILE_EDITOR_MANAGER, hook);
 
         StringBuilder status = new StringBuilder("Пишет код в Intelij IDEA. ");

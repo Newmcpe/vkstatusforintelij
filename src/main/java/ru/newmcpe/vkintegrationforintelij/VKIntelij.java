@@ -20,7 +20,7 @@ import java.util.function.Consumer;
 public class VKIntelij {
     private static final String ENABLED_FILE = "enabled.txt";
     private static final String TOKEN_PATH = System.getProperty("user.home") + "/token.txt";
-    private static final String DEFAULT_MESSAGE_PATH = System.getProperty("user.home") + "/default_message.txt";
+
     private static ExecutorService threadPool
             = Executors.newFixedThreadPool(10);
 
