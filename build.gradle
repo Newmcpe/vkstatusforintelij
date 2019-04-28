@@ -18,9 +18,10 @@ dependencies {
 
 intellij {
     version '2018.1.1'
+    intellij.updateSinceUntilBuild false
 }
 patchPluginXml {
     changeNotes """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
+      - Fixed plugin
+      """
 }

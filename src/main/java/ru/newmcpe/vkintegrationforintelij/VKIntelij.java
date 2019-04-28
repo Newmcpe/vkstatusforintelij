@@ -60,9 +60,7 @@ public class VKIntelij {
 
     public static void setStatus(String text) {
         VKIntelij.getToken(token -> {
-            if (token != null && token.equalsIgnoreCase("")) {
-                Utils.get("https://api.vk.com/method/status.set?text=" + text.replace(" ", "+") + "&access_token=" + token + "&v=5.67");
-            }
+            Utils.get("https://api.vk.com/method/status.set?text=" + text.replace(" ", "+") + "&access_token=" + token + "&v=5.67");
         });
     }
 
